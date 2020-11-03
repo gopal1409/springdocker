@@ -1,0 +1,49 @@
+    1  yum install -y yum-utils
+    2  yum-config-manager \
+    3      --add-repo \
+    4      https://download.docker.com/linux/centos/docker-ce.repo
+    5  yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+    6  yum install docker-ce docker-ce-cli containerd.io
+    7  systemctl start docker
+    8  systemctl enable docker
+    9  history
+   10   5  yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+   11      6  yum install docker-ce docker-ce-cli containerd.io
+   12      7  systemctl start docker
+   13      8  systemctl enable docker
+   14  docker --version
+   15  systemctl status docker
+   16  docker
+   17  yum install docker-ce docker-ce-cli containerd.io
+   18  systemctl start docker
+   19  systemctl enable docker
+   20  service docker status
+   21  docker --version
+   22  docker container run --publish 80:80 --detach nginx
+   23  docker ps
+   24  mkdir project
+   25  cd project/
+   26  vi HelloWorld.java
+   27  yum install java-1.8.0-openjdk
+   28  ls
+   29  yum install java-1.8.0-openjdk-devel
+   30  javac HelloWorld.java 
+   31  vi manifest.txt
+   32  jar cfm HelloWorld.jar manifest.txt HelloWorld.class 
+   33  ls
+   34  java -jar HelloWorld.jar 
+   35  vi Dockerfile
+   36  docker build -t helloworld .
+   37  git init
+   38  yum install git
+   39  git init
+   40  git add .
+   41  git config --global user.name "gopal
+"
+   42  git config --global user.email "gopal1409@gmail.com
+"
+   43  git commit -m "java app with docker"
+   44  git status
+   45  git remote add origin https://github.com/gopal1409/springdocker.git
+   46  git push -u origin master
+   47  history > dockercommand.txt
